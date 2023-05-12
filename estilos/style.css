@@ -1,0 +1,47 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2? family= Titillium+Web:ital,wght@1,200 & display=swap');
+*{
+    margin:0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+h1{
+    color:aliceblue;
+}
+
+body{
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 1em;
+    background-color: black;
+}
+
+header{
+    /*Alinhamento dos textos*/
+    text-align: center;
+    padding: 30px;
+}
+
+main#album {
+    /*Renderizar os elementos*/
+    display: flex;
+    /* Colocar o conteúdo em linha e não permite a quebra de linha.*/
+    flex-flow: row wrap;
+}
+section.coluna { 
+    border: 1px dashed black;
+    flex: 1 1 50%;
+    padding: 0px 5px;
+}
+section > img {
+    /* Especifica a largura e a altura de uma imagem */
+    width: 100%;
+    /* Indica a distancia ma parte inferior do conteúdo*/
+    padding-bottom: 10px;
+}
+
+footer{
+    background-color:black;
+    color:white;
+    padding: 15px;
+    text-align: center;
+}
